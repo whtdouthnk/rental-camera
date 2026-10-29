@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="adminHMD professional admin dashboard template documentation">
+  <title>Documentation | adminHMD</title>
+
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/vendors/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <div class="admin-shell">
+    <div class="sidebar-backdrop" data-sidebar-close></div>
+
+    <aside class="admin-sidebar" id="adminSidebar" aria-label="Main navigation">
+      <div class="sidebar-header">
+        <a class="brand-mark" href="../html/index.html" aria-label="adminHMD dashboard">
+          <span class="brand-icon"><i class="bi bi-grid-1x2-fill" aria-hidden="true"></i></span>
+          <span class="brand-copy">
+            <span class="brand-title">adminHMD</span>
+            <span class="brand-subtitle">Documentation</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-link active" href="#introduction">
+          <span class="nav-icon"><i class="bi bi-info-circle" aria-hidden="true"></i></span>
+          <span class="nav-text">Introduction</span>
+        </a>
+        <a class="nav-link" href="#installation">
+          <span class="nav-icon"><i class="bi bi-download" aria-hidden="true"></i></span>
+          <span class="nav-text">Installation</span>
+        </a>
+        <a class="nav-link" href="#file-structure">
+          <span class="nav-icon"><i class="bi bi-folder" aria-hidden="true"></i></span>
+          <span class="nav-text">File Structure</span>
+        </a>
+
+        <a class="nav-link" href="#colors">
+          <span class="nav-icon"><i class="bi bi-palette" aria-hidden="true"></i></span>
+          <span class="nav-text">Colors & Theme</span>
+        </a>
+        
+        <a class="nav-link" href="../html/index.html">
+          <span class="nav-icon"><i class="bi bi-speedometer2" aria-hidden="true"></i></span>
+          <span class="nav-text">Live Preview</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span class="status-dot"></span>
+        <span class="sidebar-footer-text">Documentation v1.0</span>
+      </div>
+    </aside>
+
+    <div class="admin-main">
+      <nav class="navbar admin-navbar navbar-expand bg-white border-bottom">
+        <div class="container-fluid px-3 px-lg-4">
+          <button class="sidebar-toggle" type="button" data-sidebar-toggle aria-controls="adminSidebar" aria-expanded="true" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="navbar-actions ms-auto">
+            <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme" title="Switch color theme">
+              <i class="bi bi-moon-stars" data-theme-icon aria-hidden="true"></i>
+            </button>
+            <a class="btn btn-primary btn-sm ms-2" href="#!"><i class="bi bi-life-preserver me-1"></i> Support</a>
+          </div>
+        </div>
+      </nav>
+
+      <main class="dashboard-content">
+        <div class="container-fluid px-3 px-lg-4 py-4">
+          
+          <div class="page-heading mb-4">
+            <div class="page-heading-copy">
+              <span class="page-icon bg-primary text-white"><i class="bi bi-journal-text" aria-hidden="true"></i></span>
+              <div>
+                <p class="eyebrow mb-1">Documentation</p>
+                <h1 class="h3 mb-1">Getting Started</h1>
+                <p class="text-muted mb-0">Everything you need to know to get started with adminHMD dashboard template.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Introduction -->
+          <div class="panel mb-4" id="introduction">
+            <div class="panel-header">
+              <h2 class="h5 mb-0 section-title"><i class="bi bi-info-circle me-2"></i><span>Introduction</span></h2>
+            </div>
+            <div class="p-3 p-lg-4">
+              <p>Welcome to <strong>adminHMD</strong>. This is a premium, fully responsive admin dashboard template built with HTML5, CSS3, and the latest <strong>Bootstrap 5</strong> framework. It is designed to be clean, fast, and easily customizable for any web application, SaaS platform, CRM, or CMS.</p>
+              
+              <div class="alert alert-primary d-flex align-items-center mb-0 mt-3" role="alert">
+                <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+                <div>
+                  <h4 class="alert-heading h6 mb-1">Note!</h4>
+                  <p class="mb-0 small">This template uses Bootstrap 5 which no longer requires jQuery. All interactive components are powered by vanilla JavaScript.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Installation -->
+          <div class="panel mb-4" id="installation">
+            <div class="panel-header">
+              <h2 class="h5 mb-0 section-title"><i class="bi bi-download me-2"></i><span>Installation & Setup</span></h2>
+            </div>
+            <div class="p-3 p-lg-4">
+              <p>Running the template locally is straightforward. You can simply open the HTML files in your browser, or run it through a local web server (recommended).</p>
+              
+              <h4 class="h6 mt-4 fw-bold">1. Unzip the downloaded file</h4>
+              <p class="text-muted small">Extract the contents of the ZIP file to a folder on your computer.</p>
+              
+              <h4 class="h6 mt-4 fw-bold">2. Open in Browser</h4>
+              <p class="text-muted small">Navigate to the <code>html/</code> folder and open <code>index.html</code> in your preferred web browser.</p>
+
+              <h4 class="h6 mt-4 fw-bold">3. Running via Local Server (Recommended)</h4>
+              <p class="text-muted small">If you have Node.js installed, you can use <code>live-server</code> or a similar package:</p>
+              <div class="bg-dark text-light p-3 rounded mt-2 overflow-auto" style="font-family: monospace; font-size: 0.875rem;">
+<span class="text-secondary"># Install live-server globally</span><br>
+npm install -g live-server<br><br>
+<span class="text-secondary"># Navigate to the template directory</span><br>
+cd path/to/adminHMD<br><br>
+<span class="text-secondary"># Start the server</span><br>
+live-server
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: File Structure -->
+          <div class="panel mb-4" id="file-structure">
+            <div class="panel-header">
+              <h2 class="h5 mb-0 section-title"><i class="bi bi-folder me-2"></i><span>File Structure</span></h2>
+            </div>
+            <div class="p-3 p-lg-4">
+              <p>The template follows a logical and modular directory structure:</p>
+              <div class="bg-dark text-light p-3 rounded mt-2 overflow-auto" style="font-family: monospace; font-size: 0.875rem;">
+adminHMD/<br>
+├── assets/<br>
+│   ├── css/           <span class="text-secondary"># Compiled CSS files (Bootstrap & Custom)</span><br>
+│   ├── images/        <span class="text-secondary"># Avatars, logos, and product images</span><br>
+│   ├── js/            <span class="text-secondary"># Core JS (Bootstrap bundle & main.js)</span><br>
+│   ├── scss/          <span class="text-secondary"># Source SASS/SCSS files</span><br>
+│   └── vendors/       <span class="text-secondary"># Third-party plugins (Chart.js, Icons, etc.)</span><br>
+├── documentation/     <br>
+│   └── docs.html      <span class="text-secondary"># This documentation file</span><br>
+└── html/              <span class="text-secondary"># All HTML page templates</span><br>
+    ├── index.html<br>
+    ├── users.html<br>
+    ├── charts.html<br>
+    └── ...
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Customization -->
+          <div class="panel mb-4" id="colors">
+            <div class="panel-header">
+              <h2 class="h5 mb-0 section-title"><i class="bi bi-palette me-2"></i><span>Customizing Colors & Theme</span></h2>
+            </div>
+            <div class="p-3 p-lg-4">
+              <p>adminHMD uses CSS variables for easy theming. You can find these variables in <code>assets/css/style.css</code>.</p>
+              
+              <p>To change the primary color globally, update the following variable:</p>
+              
+              <div class="bg-dark text-light p-3 rounded mt-2 overflow-auto mb-4" style="font-family: monospace; font-size: 0.875rem;">
+:root {<br>
+&nbsp;&nbsp;--bs-primary: <span class="text-info">#0d6efd</span>; <span class="text-secondary">/* Change this hex code */</span><br>
+&nbsp;&nbsp;--bs-primary-rgb: 13, 110, 253;<br>
+&nbsp;&nbsp;<span class="text-secondary">/* ... */</span><br>
+}
+              </div>
+              
+              <h4 class="h6 mt-4 fw-bold">Dark Mode</h4>
+              <p class="text-muted small mb-0">The template includes built-in dark mode functionality triggered by the moon icon in the navbar. The logic for toggling this is located in <code>assets/js/main.js</code> and relies on adding a <code>data-theme="dark"</code> attribute to the HTML tag.</p>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <footer class="admin-footer">
+        <div class="container-fluid px-3 px-lg-4">
+          <span>Copyright 2026 adminHMD. <br> Developed by <a target="_blank" class="fw-bold text-success" href="https://github.com/HasanMahmudDev">Md. Hasan Mahmud</a> • Distributed by <a target="_blank" class="fw-bold text-success" href="https://themewagon.com">ThemeWagon</a> </span>
+          <span>Professional dashboard template.</span>
+          <span>Professional dashboard template.</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Simple script to handle active state on docs sidebar based on scroll/click
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.sidebar-nav .nav-link[href^="#"]');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
